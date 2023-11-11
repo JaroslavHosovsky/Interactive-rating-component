@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive rating component</title>
+  </head>
+
+  <body class="bg-[#121417] font-overpass">
+    <main class="w-[90%] m-auto h-screen flex items-center max-w-[400px]">
+      <!-- First section -->
+      <section class="p-6 bg-[#19202a] rounded-2xl">
+        <img
+          src="/img/icon-star.svg"
+          class="mb-7 p-3 rounded-[50%] bg-[#272e38]"
+          alt=""
+        />
+        <div class="mb-7">
+          <h1 class="mb-3 text-[#ffffff] text-2xl font-bold">How did we do?</h1>
+          <p class="text-[#959eac] text-[15px]">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="flex justify-between mb-7">
+          <div
+            class="rate w-11 h-11 flex justify-center items-center rounded-[50%] bg-[#282f39] text-[#959eac] hover:bg-[#959eac] hover:text-[#ffffff] cursor-pointer"
+          >
+            1
+          </div>
+          <div
+            class="rate w-11 h-11 flex justify-center items-center rounded-[50%] bg-[#282f39] text-[#959eac] hover:bg-[#959eac] hover:text-[#ffffff] cursor-pointer"
+          >
+            2
+          </div>
+          <div
+            class="rate w-11 h-11 flex justify-center items-center rounded-[50%] bg-[#282f39] text-[#959eac] hover:bg-[#959eac] hover:text-[#ffffff] cursor-pointer"
+          >
+            3
+          </div>
+          <div
+            class="rate w-11 h-11 flex justify-center items-center rounded-[50%] bg-[#282f39] text-[#959eac] hover:bg-[#959eac] hover:text-[#ffffff] cursor-pointer"
+          >
+            4
+          </div>
+          <div
+            class="rate w-11 h-11 flex justify-center items-center rounded-[50%] bg-[#282f39] text-[#959eac] hover:bg-[#959eac] hover:text-[#ffffff] cursor-pointer"
+          >
+            5
+          </div>
+        </div>
+        <div
+          class="submit-btn text-[#ffffff] hover:text-[#fb7413] w-[100%] h-12 flex justify-center items-center rounded-3xl text-l uppercase bg-[#fb7413] hover:bg-[#ffffff] cursor-pointer"
+        >
+          <h1 class="">Submit</h1>
+        </div>
+      </section>
+    </main>
+
+    <!-- Thank you section - napsat flex -->
+    <div
+      class="thank-you w-[90%] m-auto h-screen items-center max-w-[400px] hidden"
+    >
+      <section
+        class="px-6 py-10 bg-[#19202a] rounded-2xl text-center flex flex-col items-center"
+      >
+        <img
+          src="/img/illustration-thank-you.svg"
+          class="w-[55%] mb-8"
+          alt=""
+        />
+        <p
+          class="final-text text-[#fb7413] bg-[#282f39] px-4 py-2 rounded-3xl mb-6"
+        >
+          <!-- You seleceted 4 out of 5 -->
+        </p>
+        <h1 class="text-[#ffff] mb-4 text-2xl">Thank you!</h1>
+        <p class="text-[#959eac] text-[15px]">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
